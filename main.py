@@ -5,6 +5,7 @@ import BarChartPlotter
 import PlotLineChart
 import matplotlib.pyplot as plt
 import plot_average_from_json
+import utils.Scenario2 
 
 
 def main():

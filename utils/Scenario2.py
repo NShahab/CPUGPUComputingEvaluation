@@ -3,7 +3,7 @@ import cv2
 import time
 
 # Load an image for processing
-image_path = "path_to_your_image.jpg"
+image_path = "F:\CPUGPUComputingEvaluation\noroz_1402.jpg"
 image = cv2.imread(image_path)
 
 # CPU Image Processing
