@@ -1,6 +1,7 @@
 import numpy as np
 import time
 
+
 def matrix_multiplication(matrix_size=1000):
     matrix_a = np.random.rand(matrix_size, matrix_size)
     matrix_b = np.random.rand(matrix_size, matrix_size)

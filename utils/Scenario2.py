@@ -1,9 +1,8 @@
-# ****************************************** written by Alireza ***************************************
 import cv2
 import time
 
 # Load an image for processing
-image_path = "F:\CPUGPUComputingEvaluation\noroz_1402.jpg"
+image_path = "image_path = "https://imgur.com/QMtw7dB.jpg"
 image = cv2.imread(image_path)
 
 # CPU Image Processing

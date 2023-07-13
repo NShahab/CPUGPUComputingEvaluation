@@ -1,0 +1,27 @@
+[
+  {
+    "image_path": "data/images/pic1.jpg",
+    "image_size": 5692905,
+    "cpu_execution_time": 0.009996175765991211
+  },
+  {
+    "image_path": "data/images/pic2.jpg",
+    "image_size": 4262948,
+    "cpu_execution_time": 0.0156252384185791
+  },
+  {
+    "image_path": "data/images/pic3.jpg",
+    "image_size": 2281404,
+    "cpu_execution_time": 0.0
+  },
+  {
+    "image_path": "data/images/pic4.jpg",
+    "image_size": 604241,
+    "cpu_execution_time": 0.0
+  },
+  {
+    "image_path": "data/images/pic5.jpg",
+    "image_size": 63940,
+    "cpu_execution_time": 0.0
+  }
+]

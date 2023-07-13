@@ -2,6 +2,7 @@ import json
 import matplotlib.pyplot as plt
 import os
 
+
 def plot_line_chart_from_json(json_filename):
     if not os.path.isfile(json_filename):
         print(f"File '{json_filename}' does not exist.")
@@ -12,22 +13,26 @@ def plot_line_chart_from_json(json_filename):
 
     sizes = []
     execution_times = []
+    lineChart_name = ''
+    lineColor = ''
 
-    if json_filename=='averaged_execution_cpu_times.json':
-        lineChart_name = "lineChart_matrix_cpu.png"   
-        lineColor = 'red'   
+    if json_filename == 'averaged_execution_cpu_times.json':
+        lineChart_name = "lineChart_matrix_cpu.png"
+        lineColor = 'red'
+    elif json_filename == 'averaged_execution_gpu_times.json':
+        lineChart_name = "lineChart_matrix_gpu.png"
+        lineColor = 'blue'
     else:
-       lineChart_name = "lineChart_matrix_gpu.png"    
-       lineColor = 'blue'
+        print(f"Invalid JSON filename: '{json_filename}'")
+        return
 
     for size, result in data.items():
         sizes.append(int(result['size']))
         execution_times.append(float(result['average_execution_time']))
 
-    plt.plot(sizes, execution_times,color=lineColor)
+    plt.plot(sizes, execution_times, color=lineColor)
     plt.xlabel('Size')
     plt.ylabel('Average Execution Time')
     plt.title('Averaged Execution Times - Line Plot')
     plt.savefig(lineChart_name)
     plt.show()
-
